@@ -1,105 +1,108 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet/less" type="text/css" href="style.less">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="less.js"></script>
-<script src="javascript.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <link rel="stylesheet/less" type="text/css" href="style.less">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="less.js"></script>
+    <script src="javascript.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-64332348-1', 'auto');
-  ga('send', 'pageview');
+      ga('create', 'UA-64332348-1', 'auto');
+      ga('send', 'pageview');
 
-</script>
+  </script>
 </head>
 <body>
 
 
-<div style="display:table;" id="outside">
-    <div style="display:table-row" id="timings">
-        <div class="time" id="dayheading">
-            <p>Days</p>
-        </div>
-        <div class="time" id="nine">
-            <p>9-9:30</p>
-        </div>
-        <div class="time" id="ninethirty">
-            <p>9:30-10:00</p>
-        </div>
-        <div class="time" id="ten">
-            <p>10:00-10:30</p>
-        </div>
-        <div class="time" id="tenthirty">
-            <p>10:30-11:00</p>
-        </div>
-        <div class="time" id="eleven">
-            <p>11:00-11:30</p>
-        </div>
-        <div class="time" id="eleventhirty">
-            <p>11:30-12:00</p>
-        </div>
-        <div class="time" id="twelve">
-            <p>12:00-12:30</p>
-        </div>
-        <div class="time" id="twelvethrity">
-            <p>12:30-1:00</p>
-        </div>
-        <div class="time" id="one">
-            <p>1:00-1:30</p>
-        </div>
-        <div class="time" id="onethirty">
-            <p>1:30-2:00</p>
-        </div>
-        <div class="time" id="two">
-            <p>2-2:30</p>
-        </div>
-        <div class="time" id="twothirty">
-            <p>2:30-3:00</p>
-        </div>
-        <div class="time" id="three">
-            <p>3:00-3:30</p>
-        </div>
-        <div class="time" id="threethirty">
-            <p>3:30-4:00</p>
-        </div>
-        <div class="time" id="four">
-            <p>4-4:30</p>
-        </div>
-        <div class="time" id="fourthirty">
-            <p>4:30-5:00</p>
-        </div>
-        <div class="time" id="five">
-            <p>5-5:30</p>
+    <div style="display:table;" id="outside">
+        <div style="display:table-row" id="timings">
+            <div class="time" id="dayheading">
+                <p>Days</p>
+            </div>
+            <div class="time" id="nine">
+                <p>9-9:30</p>
+            </div>
+            <div class="time" id="ninethirty">
+                <p>9:30-10:00</p>
+            </div>
+            <div class="time" id="ten">
+                <p>10:00-10:30</p>
+            </div>
+            <div class="time" id="tenthirty">
+                <p>10:30-11:00</p>
+            </div>
+            <div class="time" id="eleven">
+                <p>11:00-11:30</p>
+            </div>
+            <div class="time" id="eleventhirty">
+                <p>11:30-12:00</p>
+            </div>
+            <div class="time" id="twelve">
+                <p>12:00-12:30</p>
+            </div>
+            <div class="time" id="twelvethrity">
+                <p>12:30-1:00</p>
+            </div>
+            <div class="time" id="one">
+                <p>1:00-1:30</p>
+            </div>
+            <div class="time" id="onethirty">
+                <p>1:30-2:00</p>
+            </div>
+            <div class="time" id="two">
+                <p>2-2:30</p>
+            </div>
+            <div class="time" id="twothirty">
+                <p>2:30-3:00</p>
+            </div>
+            <div class="time" id="three">
+                <p>3:00-3:30</p>
+            </div>
+            <div class="time" id="threethirty">
+                <p>3:30-4:00</p>
+            </div>
+            <div class="time" id="four">
+                <p>4-4:30</p>
+            </div>
+            <div class="time" id="fourthirty">
+                <p>4:30-5:00</p>
+            </div>
+            <div class="time" id="five">
+                <p>5-5:30</p>
+            </div>
+
         </div>
 
-    </div>
-    
 
-    <div style="display:table-row" id="monday_row">
-        <div class="days" id="monday">
-            <p>Monday</p>
-        </div>
-        <div class="slot" id="monday_first">
-        </div>
-        <div class="slot monday_first_slot" id="monday_second">
-        CV</br>
-        RFCD</br>
-        RA</br>
-        DBSI</br>
-        MC</br>
-        IR</br>
-        </div>
-        <div class="slot monday_first_slot" id="monday_third">
-        </div>
-        <div class="slot monday_first_slot" id="monday_fourth">
-        </div>
-        <div class="slot" id="monday_fifth">
-        </div>
-        <div class="slot monday_second_slot" id="monday_sixth">
+        <div style="display:table-row" id="monday_row">
+            <div class="days" id="monday">
+                <p>Monday</p>
+            </div>
+            <div class="slot" id="monday_first">
+            </div>
+            <div class="slot" id="monday_first_s">
+            </div>
+            <div class="slot monday_first_slot" id="monday_second">
+                CV</br>
+                RFCD</br>
+                SSSBB</br>
+                RA</br>
+                DBSI</br>
+                MC</br>
+                IR</br>
+            </div>
+            <div class="slot monday_first_slot" id="monday_third">
+            </div>
+            <div class="slot monday_first_slot" id="monday_fourth">
+            </div>
+<!--             <div class="slot" id="monday_fifth">
+            </div>
+        -->            <div class="slot monday_second_slot" id="monday_sixth">
         MS </br>
         SSB</br>
         WSI</br>
@@ -107,297 +110,313 @@
         MSD</br>
         SDN</br>
         FIN</br>
-        </div>
-        <div class="slot monday_second_slot" id="monday_seventh">
-        </div>
-        <div class="slot monday_second_slot" id="monday_eighth">
-        </div>
-        <div class="slot" id="monday_ninth">
-        </div>
-        <div class="slot" id="monday_tenth">
-        </div>
-        <div class="slot monday_third_slot" id="monday_eleventh">
+    </div>
+    <div class="slot monday_second_slot" id="monday_seventh">
+    </div>
+    <div class="slot monday_second_slot" id="monday_eighth">
+    </div>
+    <div class="slot break" id="monday_ninth">
+    </div>
+    <div class="slot break" id="monday_tenth">
+    </div>
+    <div class="slot break" id="monday_tenth_s">
+    </div>
+    <div class="slot monday_third_slot" id="monday_eleventh">
         SSP</br>
         SDCT</br>
         DSys</br>
         NP</br>
         CAOS</br>
-        </div>
-        <div class="slot monday_third_slot" id="monday_twelfth">
-        </div>
-        <div class="slot monday_third_slot" id="monday_thirteenth">
-        </div>
-        <div class="slot monday_fourth_slot" id="monday_fourteenth">
+    </div>
+    <div class="slot monday_third_slot" id="monday_twelfth">
+    </div>
+    <div class="slot monday_third_slot" id="monday_thirteenth">
+    </div>
+    <div class="slot monday_fourth_slot" id="monday_fourteenth">
         CT</br>
         Socio</br>
         Psy</br>        
-        </div>
-        <div class="slot monday_fourth_slot" id="monday_fifteenth">
-        </div>
-        <div class="slot monday_fourth_slot" id="monday_sixteenth">
-        </div>
-        <div class="slot" id="monday_seventeenth">
-        </div>
-        
     </div>
-    
-
-    <div style="display:table-row" id="tuesday_row">
-        <div class="days" id="tuesday">
-            <p>Tuesday</p>
-        </div>
-        <div class="slot" id="tuesday_first">
-        </div>
-        <div class="slot tuesday_first_slot" id="tuesday_second">
-            PSOSM</br>
-            MC</br>
-            DSP</br>
-            EO</br>
-            MAS</br>
-            IMB</br>
-        </div>
-        <div class="slot tuesday_first_slot" id="tuesday_third">
-        </div>
-        <div class="slot tuesday_first_slot" id="tuesday_fourth">
-        </div>
-        <div class="slot" id="tuesday_fifth">
-        </div>
-        <div class="slot tuesday_second_slot" id="tuesday_sixth">
-            PRP</br>
-            PA</br>
-            CG</br>
-            AN</br>
-            DVD</br>
-            FOMB</br>
-        </div>
-        <div class="slot tuesday_second_slot" id="tuesday_seventh">
-        </div>
-        <div class="slot tuesday_second_slot" id="tuesday_eighth">
-        </div>
-        <div class="slot" id="tuesday_ninth">
-        </div>
-        <div class="slot" id="tuesday_tenth">
-        </div>
-        <div class="slot tuesday_third_slot" id="tuesday_eleventh">
-            MAD</br>
-            AC</br>
-            RS</br>
-            MMBP</br>
-            GICT</br>
-        </div>
-        <div class="slot tuesday_third_slot" id="tuesday_twelfth">
-        </div>
-        <div class="slot tuesday_third_slot" id="tuesday_thirteenth">
-        </div>
-        <div class="slot tuesday_fourth_slot" id="tuesday_fourteenth">
-            Hist</br>
-            CT</br>
-            TA</br>
-            MMC</br>
-        </div>
-        <div class="slot tuesday_fourth_slot" id="tuesday_fifteenth">
-        </div>
-        <div class="slot tuesday_fourth_slot" id="tuesday_sixteenth">
-        </div>
-        <div class="slot" id="tuesday_seventeenth">
-        </div>
-
+    <div class="slot monday_fourth_slot" id="monday_fifteenth">
     </div>
-    
+    <div class="slot monday_fourth_slot" id="monday_sixteenth">
+    </div>
+    <div class="slot" id="monday_seventeenth">
+    </div>
 
-    <div style="display:table-row" id="wednesday_row">
-        <div class="days" id="wednesday">
-            <p>Wednesday</p>
-        </div>
-        <div class="slot" id="wednesday_first">
-        </div>
-        <div class="slot wednesday_first_slot" id="wednesday_second">
-            CNT</br>
-            GA</br>
-            SE</br>
-            LO</br>
-            CN</br>
-        </div>
-        <div class="slot wednesday_first_slot" id="wednesday_third">
-        </div>
-        <div class="slot wednesday_first_slot" id="wednesday_fourth">
-        </div>
+</div>
+
+
+<div style="display:table-row" id="tuesday_row">
+    <div class="days" id="tuesday">
+        <p>Tuesday</p>
+    </div>
+    <div class="slot" id="tuesday_first">
+    </div>
+    <div class="slot" id="tuesday_first_s">
+    </div>
+
+    <div class="slot tuesday_first_slot" id="tuesday_second">
+        NT</br>
+        AELD</br>
+        DHCS</br>
+        WN</br>
+        PO</br>
+        MMBP</br>
+    </div>
+    <div class="slot tuesday_first_slot" id="tuesday_third">
+    </div>
+    <div class="slot tuesday_first_slot" id="tuesday_fourth">
+    </div>
+    <div class="slot tuesday_second_slot" id="tuesday_sixth">
+        ATD</br>
+        AEA</br>
+        SE</br>
+        Rob</br>
+        TMC</br>
+        SSD</br>
+    </div>
+    <div class="slot tuesday_second_slot" id="tuesday_seventh">
+    </div>
+    <div class="slot tuesday_second_slot" id="tuesday_eighth">
+    </div>
+    <div class="slot" id="tuesday_ninth">
+    </div>
+    <div class="slot" id="tuesday_tenth">
+    </div>
+    <div class="slot" id="tuesday_fifth">
+            </div>
+
+    <div class="slot tuesday_third_slot" id="tuesday_eleventh">
+        A&G</br>
+        IFA</br>
+        TOC</br>
+        GT</br>
+        PCSMA</br>
+    </div>
+    <div class="slot tuesday_third_slot" id="tuesday_twelfth">
+    </div>
+    <div class="slot tuesday_third_slot" id="tuesday_thirteenth">
+    </div>
+    <div class="slot tuesday_fourth_slot" id="tuesday_fourteenth">
+        Lit</br>
+        TPEE</br>
+        ITGov</br>
+        IGT</br>
+        BDA</br>
+    </div>
+    <div class="slot tuesday_fourth_slot" id="tuesday_fifteenth">
+    </div>
+    <div class="slot tuesday_fourth_slot" id="tuesday_sixteenth">
+    </div>
+    <div class="slot" id="tuesday_seventeenth">
+    </div>
+
+</div>
+
+
+<div style="display:table-row" id="wednesday_row">
+    <div class="days" id="wednesday">
+        <p>Wednesday</p>
+    </div>
+    <div class="slot" id="wednesday_first">
+    </div>
+    <div class="slot" id="wednesday_first_s">
+    </div>
+
+    <div class="slot wednesday_first_slot" id="wednesday_second">
+        SSP</br>
+        SDCT</br>
+        DSys</br>
+        ENT</br>
+        CAOS</br>
+    </div>
+    <div class="slot wednesday_first_slot" id="wednesday_third">
+    </div>
+    <div class="slot wednesday_first_slot" id="wednesday_fourth">
+    </div>
+    <div class="slot wednesday_second_slot" id="wednesday_sixth">
+        PGM</br>
+        GPU</br>
+        TC</br>
+        OCS</br>
+        ALG</br>
+        ATA</br>
+    </div>
+    <div class="slot wednesday_second_slot" id="wednesday_seventh">
+    </div>
+    <div class="slot wednesday_second_slot" id="wednesday_eighth">
+    </div>
+    <div class="slot" id="wednesday_ninth">
+    </div>
+    <div class="slot" id="wednesday_tenth">
+    </div>
         <div class="slot" id="wednesday_fifth">
-        </div>
-        <div class="slot wednesday_second_slot" id="wednesday_sixth">
-            CMP</br>
-            DMG</br>
-            ML</br>
-            CS</br>
-            FCS</br>
-            MCS</br>
-        </div>
-        <div class="slot wednesday_second_slot" id="wednesday_seventh">
-        </div>
-        <div class="slot wednesday_second_slot" id="wednesday_eighth">
-        </div>
-        <div class="slot" id="wednesday_ninth">
-        </div>
-        <div class="slot" id="wednesday_tenth">
-        </div>
-        <div class="slot wednesday_third_slot" id="wednesday_eleventh">
-            Faculty meeting slot</br>
-            PHY</br>
+    </div>
 
-        </div>
-        <div class="slot wednesday_third_slot" id="wednesday_twelfth">
-        </div>
-        <div class="slot wednesday_third_slot" id="wednesday_thirteenth">
-        </div>
-        <div class="slot wednesday_fourth_slot" id="wednesday_fourteenth">
-            PoR</br>
-            Psy</br>
-            TandS</br>
-            NAP</br>
-            TA</br>
-            SCM</br>
-            PHY</br>
-            
-            
-            
-        </div>
-        <div class="slot wednesday_fourth_slot" id="wednesday_fifteenth">
-        </div>
-        <div class="slot wednesday_fourth_slot" id="wednesday_sixteenth">
-        </div>
-        <div class="slot" id="wednesday_seventeenth">
-        </div>
+    <div class="slot wednesday_third_slot" id="wednesday_eleventh">
+        Faculty meeting slot</br>
+        Lab-ATA</br>
+        Lab-AELD</br>
+        OE</br>
 
     </div>
-    
+    <div class="slot wednesday_third_slot" id="wednesday_twelfth">
+    </div>
+    <div class="slot wednesday_third_slot" id="wednesday_thirteenth">
+    </div>
+    <div class="slot wednesday_fourth_slot" id="wednesday_fourteenth">
+        CT</br>
+        Socio</br>
+        Psy</br>
 
-    <div style="display:table-row" id="thursday_row">
-        <div class="days" id="thursday">
-            <p>Thursday</p>
-        </div>
-        <div class="slot" id="thursday_first">
-        </div>
-        <div class="slot thursday_first_slot" id="thursday_second">
-            ENT</br>
-            DCS</br>
-            PDCS</br>
-            Sweb</br>
-            LCS</br>
-            NS</br>
-            CMOS</br>
-        </div>
-        <div class="slot thursday_first_slot" id="thursday_third">
-        </div>
-        <div class="slot thursday_first_slot" id="thursday_fourth">
-        </div>
+    </div>
+    <div class="slot wednesday_fourth_slot" id="wednesday_fifteenth">
+    </div>
+    <div class="slot wednesday_fourth_slot" id="wednesday_sixteenth">
+    </div>
+    <div class="slot" id="wednesday_seventeenth">
+    </div>
+
+</div>
+
+
+<div style="display:table-row" id="thursday_row">
+    <div class="days" id="thursday">
+        <p>Thursday</p>
+    </div>
+    <div class="slot" id="thursday_first">
+    </div>
+    <div class="slot" id="thursday_first_s">
+    </div>
+    <div class="slot thursday_first_slot" id="thursday_second">
+        CV</br>
+        RFCD</br>
+        SSSBB</br>
+        RA</br>
+        DBSI</br>
+        MC</br>
+        IR</br>
+    </div>
+    <div class="slot thursday_first_slot" id="thursday_third">
+    </div>
+    <div class="slot thursday_first_slot" id="thursday_fourth">
+    </div>
+    <div class="slot thursday_second_slot" id="thursday_sixth">
+        MS</br>
+        SSB</br>
+        WSI</br>
+        OpCS</br>
+        MSD</br>
+        SDN</br>
+        FIN</br>
+    </div>
+    <div class="slot thursday_second_slot" id="thursday_seventh">
+    </div>
+    <div class="slot thursday_second_slot" id="thursday_eighth">
+    </div>
+    <div class="slot" id="thursday_ninth">
+    </div>
+    <div class="slot" id="thursday_tenth">
+    </div>
         <div class="slot" id="thursday_fifth">
-        </div>
-        <div class="slot thursday_second_slot" id="thursday_sixth">
-            PRP</br>
-            PA</br>
-            CG</br>
-            AN</br>
-            DVD</br>
-            FOMB</br>
-        </div>
-        <div class="slot thursday_second_slot" id="thursday_seventh">
-        </div>
-        <div class="slot thursday_second_slot" id="thursday_eighth">
-        </div>
-        <div class="slot" id="thursday_ninth">
-        </div>
-        <div class="slot" id="thursday_tenth">
-        </div>
-        <div class="slot thursday_third_slot" id="thursday_eleventh">
-            IA</br>
-        NLE</br>
-        ASP</br>
-        SSIoT</br>
-        AI</br>
-        SC</br>
-        
-        </div>
-        <div class="slot thursday_third_slot" id="thursday_twelfth">
-        </div>
-        <div class="slot thursday_third_slot" id="thursday_thirteenth">
-        </div>
-        <div class="slot thursday_fourth_slot" id="thursday_fourteenth">
-        seminar</br>
-        SC
-        </div>
-        <div class="slot thursday_fourth_slot" id="thursday_fifteenth">
-        </div>
-        <div class="slot thursday_fourth_slot" id="thursday_sixteenth">
-        </div>
-        <div class="slot" id="thursday_seventeenth">
-        </div>
+    </div>
+
+    <div class="slot thursday_third_slot" id="thursday_eleventh">
+        A&G</br>
+        IFA</br>
+        TOC</br>
+        GT</br>
+        PCSMA</br>
 
     </div>
-    
+    <div class="slot thursday_third_slot" id="thursday_twelfth">
+    </div>
+    <div class="slot thursday_third_slot" id="thursday_thirteenth">
+    </div>
+    <div class="slot thursday_fourth_slot" id="thursday_fourteenth">
+        Seminar</br>
+    </div>
+    <div class="slot thursday_fourth_slot" id="thursday_fifteenth">
+    </div>
+    <div class="slot thursday_fourth_slot" id="thursday_sixteenth">
+    </div>
+    <div class="slot" id="thursday_seventeenth">
+    </div>
 
-    <div style="display:table-row" id="friday_row">
-        <div class="days" id="friday">
-            <p>Friday</p>
-        </div>
-        <div class="slot" id="friday_first">
-        </div>
-        <div class="slot friday_first_slot" id="friday_second">
-            PSOSM</br>
-            MC</br>
-            DSP</br>
-            EO</br>
-            MAS</br>
-            IMB</br>
-        </div>
-        <div class="slot friday_first_slot" id="friday_third">
-        </div>
-        <div class="slot friday_first_slot" id="friday_fourth">
-        </div>
+</div>
+
+
+<div style="display:table-row" id="friday_row">
+    <div class="days" id="friday">
+        <p>Friday</p>
+    </div>
+    <div class="slot" id="friday_first">
+    </div>
+    <div class="slot" id="friday_first_s">
+    </div>
+    <div class="slot friday_first_slot" id="friday_second">
+        NT</br>
+        AELD</br>
+        DHCS</br>
+        WN</br>
+        PO</br>
+        MMBP</br>
+    </div>
+    <div class="slot friday_first_slot" id="friday_third">
+    </div>
+    <div class="slot friday_first_slot" id="friday_fourth">
+    </div>
+    <div class="slot friday_second_slot" id="friday_sixth">
+        ATD</br>
+        AEA</br>
+        SE</br>
+        Rob</br>
+        TMC</br>
+        SSD</br>
+    </div>
+    <div class="slot friday_second_slot" id="friday_seventh">
+    </div>
+    <div class="slot friday_second_slot" id="friday_eighth">
+    </div>
+    <div class="slot" id="friday_ninth">
+    </div>
+    <div class="slot" id="friday_tenth">
+    </div>
         <div class="slot" id="friday_fifth">
-        </div>
-        <div class="slot friday_second_slot" id="friday_sixth">
-        CNT</br>
-            GA</br>
-            SE</br>
-            LO</br>
-            CN</br>
-        </div>
-        <div class="slot friday_second_slot" id="friday_seventh">
-        </div>
-        <div class="slot friday_second_slot" id="friday_eighth">
-        </div>
-        <div class="slot" id="friday_ninth">
-        </div>
-        <div class="slot" id="friday_tenth">
-        </div>
-        <div class="slot friday_third_slot" id="friday_eleventh">
-            MAD</br>
-            AC</br>
-            RS</br>
-            MMBP</br>
-            GICT</br>
-        </div>
-        <div class="slot friday_third_slot" id="friday_twelfth">
-        </div>
-        <div class="slot friday_third_slot" id="friday_thirteenth">
-        </div>
-        <div class="slot friday_fourth_slot" id="friday_fourteenth">
-        Hist</br>
-            CT</br>
-            
-        </div>
-        <div class="slot friday_fourth_slot" id="friday_fifteenth">
-        </div>
-        <div class="slot friday_fourth_slot" id="friday_sixteenth">
-        </div>
-        <div class="slot" id="friday_seventeenth">
-        </div>
+    </div>
+
+    <div class="slot friday_third_slot" id="friday_eleventh">
+        PGM</br>
+        GPU</br>
+        TC</br>
+        OCS</br>
+        ALG</br>
+    </div>
+    <div class="slot friday_third_slot" id="friday_twelfth">
+    </div>
+    <div class="slot friday_third_slot" id="friday_thirteenth">
+    </div>
+    <div class="slot friday_fourth_slot" id="friday_fourteenth">
+        Lit</br>
+        TPEE</br>
+        ITGov</br>
+        IGT</br>
+        SC</br>
 
     </div>
-         
-    
-    <div id="rest">
+    <div class="slot friday_fourth_slot" id="friday_fifteenth">
     </div>
+    <div class="slot friday_fourth_slot" id="friday_sixteenth">
+    </div>
+    <div class="slot" id="friday_seventeenth">
+    </div>
+
+</div>
+
+
+<div id="rest">
+</div>
 
 </div>
 
@@ -406,104 +425,91 @@
         <div style="display:table-cell">
             CSE
         </div>
-        <div style="display:table-cell">
-            CSE
+            <!-- <div style="display:table-cell">
+                CSE
+            </div> -->
+            <div style="display:table-cell">
+                ECE
+            </div>
+            <div style="display:table-cell">
+                Others
+            </div>
         </div>
-        <div style="display:table-cell">
-            ECE
-        </div>
-        <div style="display:table-cell">
-            Others
-        </div>
-    </div>
-    <div style="display:table-row">
-        <div style="display:table-cell">
-            <input type="checkbox" name="vehicle" value="CV" class="course"> Computer Vision<br>
-            <input type="checkbox" name="vehicle" value="SE" class="course"> Security Engineering<br>
-            <input type="checkbox" name="vehicle" value="DHCS" class="course"> Designing Human-Centred Systems<br>
-            <input type="checkbox" name="vehicle" value="DBSI" class="course"> Database System Implementation<br>
-            <input type="checkbox" name="vehicle" value="IR" class="course"> Information Retrieval<br>
+        <div style="display:table-row">
+            <div style="display:table-cell">
+                <input type="checkbox" name="vehicle" value="CV" class="course"> Computer Vision<br>
+                <input type="checkbox" name="vehicle" value="SE" class="course"> Security Engineering<br>
+                <input type="checkbox" name="vehicle" value="DHCS" class="course"> Designing Human-Centred Systems<br>
+                <input type="checkbox" name="vehicle" value="DBSI" class="course"> Database System Implementation<br>
+                <input type="checkbox" name="vehicle" value="IR" class="course"> Information Retrieval<br>
+                <input type="checkbox" name="vehicle" value="BDA" class="course"> Big data Analytics <br>
+                <input type="checkbox" name="vehicle" value="RA" class="course"> Randomised Algorithms<br>
+                <input type="checkbox" name="vehicle" value="TMC" class="course"> Theory of mordern crypto<br>
+                <input type="checkbox" name="vehicle" value="DSys" class="course"> Distributed Systems<br>
+                <input type="checkbox" name="vehicle" value="GPU" class="course"> GPU Computing<br>
+                <input type="checkbox" name="vehicle" value="PGM" class="course"> Probabilistic Graphical Models<br>
+                <input type="checkbox" name="vehicle" value="PO" class="course">Program Optimization<br>
+                <input type="checkbox" name="vehicle" value="PCSMA" class="course">Programming Cloud services for Mobile Applications<br>
+                <input type="checkbox" name="vehicle" value="MS" class="course">Multimedia Security<br>
+                <input type="checkbox" name="vehicle" value="TC" class="course">Topics in Cryptanalysis<br>
+                <input type="checkbox" name="vehicle" value="SDN" class="course">Software Defined Networking<br>
+                <input type="checkbox" name="vehicle" value="NP" class="course">NP Complete Problems<br>
 
-        </div>
-        <div style="display:table-cell">
-            <input type="checkbox" name="vehicle" value="FCS" class="course"> Foundation of Computer Security<br>
-            <input type="checkbox" name="vehicle" value="SSIoT" class="course"> Smart Sensing for Internet of Things<br>
-            <input type="checkbox" name="vehicle" value="AI" class="course"> Artificial Intelligence<br>
-            <input type="checkbox" name="vehicle" value="PSOSM" class="course"> Privacy and Security in Online Social Media<br>
+
             </div>
-        <div style="display:table-cell">
-            <input type="checkbox" name="vehicle" value="EO" class="course"> Engineering Optimization<br>
-            <input type="checkbox" name="vehicle" value="DVD" class="course"> Digital VLSI Design<br>
-            <input type="checkbox" name="vehicle" value="CMOS" class="course"> Analog CMOS Circuit Design<br>
-            <input type="checkbox" name="vehicle" value="DCS" class="course"> Digital Communication Systems<br>
-            <input type="checkbox" name="vehicle" value="GICT" class="course"> Green Information and Communication Technology<br>
-        </div>
-        <div style="display:table-cell">
-            <input type="checkbox" name="vehicle" value="NLE" class="course"> Non-Linear Editing<br>
-            <input type="checkbox" name="vehicle" value="TnS" class="course"> Technology and Society<br>
-            <input type="checkbox" name="vehicle" value="Psy" class="course"> Introduction To Psychology<br>
-            <input type="checkbox" name="vehicle" value="His" class="course"> History in Indian national Movement<br>
-            <input type="checkbox" name="vehicle" value="TA" class="course"> Theatre Appreciation<br>
-  
-        </div>
-    </div>
-    <div style="display:table-row">
-        <div style="display:table-cell">
-            <input type="checkbox" name="vehicle" value="MAD" class="course"> Modern Algorithm Design<br>
-            <input type="checkbox" name="vehicle" value="NS" class="course"> Network Security<br>
-            <input type="checkbox" name="vehicle" value="PA" class="course"> Program Analysis<br>
-            <input type="checkbox" name="vehicle" value="DMG" class="course"> Data Mining<br>
-            <input type="checkbox" name="vehicle" value="LCS" class="course"> Logic for Computer Science<br>
-            <input type="checkbox" name="vehicle" value="SE" class="course"> Software Engineering<br>
-        </div>
-        <div style="display:table-cell">
-            <input type="checkbox" name="vehicle" value="GA" class="course"> Graduate Algorithms<br>
-            <input type="checkbox" name="vehicle" value="MAS" class="course"> MultiAgent Systems<br>
-            <input type="checkbox" name="vehicle" value="MC" class="course"> Mobile Computing<br>
-            <input type="checkbox" name="vehicle" value="AC" class="course"> Applied Cryptography<br>
-            <input type="checkbox" name="vehicle" value="AN" class="course"> Advanced Networks<br>
-            <input type="checkbox" name="vehicle" value="SC" class="course"> Secure Coding<br>
-            <input type="checkbox" name="vehicle" value="SWeb" class="course"> Semantic Web<br>
-            
-        </div>
-        <div style="display:table-cell">
-            <input type="checkbox" name="vehicle" value="ASP" class="course"> Advanced Signal Processing<br>
-            <input type="checkbox" name="vehicle" value="CS" class="course"> Compressive Sensing<br>
-            <input type="checkbox" name="vehicle" value="CN" class="course"> Communication Networks<br>
-            <input type="checkbox" name="vehicle" value="RS" class="course"> Radar Systems<br>
-            <input type="checkbox" name="vehicle" value="DSP" class="course"> Digital Signal Processing<br>
-            <input type="checkbox" name="vehicle" value="MMC" class="course"> Multimedia Compression<br>
-            <input type="checkbox" name="vehicle" value="CNT" class="course"> Control Theory<br>
-            <input type="checkbox" name="vehicle" value="PDCS" class="course"> Principles of Digital Communication  Systems<br>
-        
-  </div>
-        <div style="display:table-cell">
-            <input type="checkbox" name="vehicle" value="ENT" class="course"> Entrepreneurship<br>
-            <input type="checkbox" name="vehicle" value="CT" class="course"> Critical Thinking<br>
-            <input type="checkbox" name="vehicle" value="PoR" class="course"> Philosophy of Religion<br>
-            <input type="checkbox" name="vehicle" value="Phy" class="course"> Physics-1<br>
-            <input type="checkbox" name="vehicle" value="MCS" class="course"> Modelling Complex Systems<br>
-            <input type="checkbox" name="vehicle" value="LO" class="course"> Linear Optmization<br>
-            <input type="checkbox" name="vehicle" value="PRP" class="course"> Probability and Random Processes<br>
-            <input type="checkbox" name="vehicle" value="IMB" class="course"> Introduction to Mathematical Biology<br>
-            <input type="checkbox" name="vehicle" value="MMBP" class="course"> Molecular Mechanics and Biological
-Physics/Biosimulations<br>
-            <input type="checkbox" name="vehicle" value="FOMB" class="course"> Foundations of Modern Biology<br>
-            <input type="checkbox" name="vehicle" value="SCM" class="course"> Effective Supply Chain Management for ECommerce
-Businesses <br>
-            
-            
+            <!-- <div style="display:table-cell"> -->
+            <div style="display:table-cell">
+                <input type="checkbox" name="vehicle" value="WN" class="course"> Wireless Networks<br>
+
+                <input type="checkbox" name="vehicle" value="RFCD" class="course"> RF Circuit Design<br>
+                <input type="checkbox" name="vehicle" value="SSP" class="course"> Statistical Signal Processing<br>
+                <input type="checkbox" name="vehicle" value="Rob" class="course"> Robotics<br>
+                <input type="checkbox" name="vehicle" value="SCDT" class="course"> System on Chip Design and Test<br>
+                <input type="checkbox" name="vehicle" value="OpCS" class="course"> Optical Communication Systems<br>
+                <input type="checkbox" name="vehicle" value="WSI" class="course"> Wireless System Implementation<br>
+                <input type="checkbox" name="vehicle" value="OCS" class="course">Optimal Control system <br>
+                <input type="checkbox" name="vehicle" value="AELD" class="course"> Advanced Embedded Logic design<br>
+                <input type="checkbox" name="vehicle" value="MSD" class="course"> Mixed Signal design<br>
+                <input type="checkbox" name="vehicle" value="ATD" class="course"> Antennas Theory and design<br>
+                <input type="checkbox" name="vehicle" value="ATA" class="course"> Algorithms to Architecture<br>
+                <input type="checkbox" name="vehicle" value="MC" class="course"> Mobile Communication<br>
+                <input type="checkbox" name="vehicle" value="SSD" class="course"> Solid State Devices<br>
+                <input type="checkbox" name="vehicle" value="CAOS" class="course">Computer Architecture and Operating Systems <br>
+
+
             </div>
+            <div style="display:table-cell">
+                <input type="checkbox" name="vehicle" value="A&G" class="course">Animation and Graphics<br>
+                <input type="checkbox" name="vehicle" value="AEA" class="course">Applied Econometric Analysis<br>
+                <input type="checkbox" name="vehicle" value="IGT" class="course">Introduction to Game theory<br>
+                <input type="checkbox" name="vehicle" value="ENT" class="course">Entrepreneurship as Career 2<br>
+                <input type="checkbox" name="vehicle" value="FIN" class="course">Foundations of Finance<br>
+                <input type="checkbox" name="vehicle" value="Lit" class="course"> Introduction to the study of Literature<br>
+                <input type="checkbox" name="vehicle" value="Socio" class="course"> Introduction to socialogy<br>
+                <input type="checkbox" name="vehicle" value="TPEE" class="course"> Theory and practice of Engineering Ethics<br>
+                <input type="checkbox" name="vehicle" value="CT" class="course"> Critical Thinking<br>
+                <input type="checkbox" name="vehicle" value="Ppsy" class="course"> Positive Psychology<br>
+                <input type="checkbox" name="vehicle" value="ITGov" class="course"> IT and Governance<br>
+                <input type="checkbox" name="vehicle" value="ALG" class="course"> Algebra<br>
+                <input type="checkbox" name="vehicle" value="GT" class="course"> Graph Theory<br>
+                <input type="checkbox" name="vehicle" value="NT" class="course"> Number Theory<br>
+                <input type="checkbox" name="vehicle" value="IFA" class="course"> Introduction to Functional Analysis<br>
+                <input type="checkbox" name="vehicle" value="OE" class="course"> Opto-Electronics<br>
+                <input type="checkbox" name="vehicle" value="SC" class="course"> Scientific Communication<br>
+            </div>
+            <div style="display:table-cell">
+
+            </div>
+        </div>
+        <div style="display:table-row">
+            <div style="display:table-cell">
+            </div>
+            <div style="display:table-cell">
+            </div>
+            <div style="display:table-cell">
+
+            </div>
+        </div>
     </div>
-    <div style="display:table-row">
-        <div style="display:table-cell">
-        </div>
-        <div style="display:table-cell">
-        </div>
-        <div style="display:table-cell">
-        
-        </div>
-    </div>
-</div>
 </body>
 </html>

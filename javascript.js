@@ -11,23 +11,27 @@ $(document).ready(function(){
 	*          or dark grey.
 	**/
 	function colourIt(text,decorate,l_grey){
+			console.log(text+"");
 		if(decorate){
+			console.log("decorate");
 
 			$("."+text)[0].style.backgroundColor=colour;
 			$("."+text)[1].style.backgroundColor=colour;
 			$("."+text)[2].style.backgroundColor=colour;
-			}
-			else if(l_grey){
+		}
+		else if(l_grey){
+						console.log("l_grey");
+
 			$("."+text)[0].style.backgroundColor=light_grey;
 			$("."+text)[1].style.backgroundColor=light_grey;
 			$("."+text)[2].style.backgroundColor=light_grey;
-			}
-			else{
+		}
+		else{
 			$("."+text)[0].style.backgroundColor=dark_grey;
 			$("."+text)[1].style.backgroundColor=dark_grey;
 			$("."+text)[2].style.backgroundColor=dark_grey;
 			
-			}
+		}
 	}
 
 	var slotSelected = []; // Array of slots selected.
@@ -54,7 +58,7 @@ $(document).ready(function(){
 		"DSys":["m3","th3"],
 		"NP":["m3","th3"],
 		"CAOS":["m3","th3"],
-		"CT":["m4","th4"],
+		"CT":["m4","w4"],
 		"Socio":["m4","th4"],
 		"Psy":["m4","th4"],
 		"NT":["t1","f1"],
@@ -84,9 +88,11 @@ $(document).ready(function(){
 		"TC":["w2","f3"],
 		"OCS":["w2","f3"],
 		"ALG":["w2","f3"],
-		"OE":["w3","w4"],
+		"OE":["w3","w2.5"],
 		"SC":["f4"],
-		"ATA":["w2","w3"]
+		"ATA":["w2","w3"],
+		"break":["breaks"]
+
 
 	}
 
@@ -102,6 +108,7 @@ $(document).ready(function(){
 		"t4":["Lit","TPEE","ITGov","IGT", "BDA"],
 		"w1":["SSP","SDCT","DSys","ENT 2","CAOS"],
 		"w2":["PGM","GPU","TC","OCS","ALG","ATA"],
+		"w2.5":["OE","break"],
 		"w3":["LAB-ATA", "LAB-AELD", "OE"],
 		"w4":["CT","Socio","Psy"],
 		"th1":["CV","RFCD","SSSBB","RA","DBSI","MC","IR"],
@@ -111,7 +118,8 @@ $(document).ready(function(){
 		"f1":["NT","AELD","DHCS","WN","PO","MMBP"],
 		"f2":["ATD","AEA","SE","Rob","TMC","SSD"],
 		"f3":["PGM","GPU","TC","OCS","ALG"],
-		"f4":["Lit","TPEE","ITGov","IGT","SC"]
+		"f4":["Lit","TPEE","ITGov","IGT","SC"],
+		"breaks":["break"]
 	}
 
 
@@ -125,71 +133,75 @@ $(document).ready(function(){
 	// Maps time slot to a function which knows how to colour the slots.
 	var slotToFunction={
 		"m1" : function(decorate){
-					// console.log("m1");
-					colourIt("monday_first_slot",decorate, true);
-					
-					
-					
-				},
+			console.log("m1");
+			colourIt("monday_first_slot",decorate, true);
+
+
+
+		},
 		"m2" : function(decorate){
-					colourIt("monday_second_slot",decorate, false);
-					
-				},
+			colourIt("monday_second_slot",decorate, false);
+
+		},
 		"m3" : function(decorate){
-					colourIt("monday_third_slot",decorate,true);
-				},
+			colourIt("monday_third_slot",decorate,true);
+		},
 		"m4" : function(decorate){
-					colourIt("monday_fourth_slot",decorate, false);
-				},
+			colourIt("monday_fourth_slot",decorate, false);
+		},
 		"t1" : function(decorate){
-					colourIt("tuesday_first_slot",decorate, false);
-				},
+			colourIt("tuesday_first_slot",decorate, false);
+		},
 		"t2" : function(decorate){
-					colourIt("tuesday_second_slot",decorate,true);
-				},
+			colourIt("tuesday_second_slot",decorate,true);
+		},
 		"t3" : function(decorate){
-					colourIt("tuesday_third_slot",decorate,false);
-				},
+			colourIt("tuesday_third_slot",decorate,false);
+		},
 		"t4" : function(decorate){
-					colourIt("tuesday_fourth_slot",decorate,true);
-				},
+			colourIt("tuesday_fourth_slot",decorate,true);
+		},
 		"w1" : function(decorate){
-					colourIt("wednesday_first_slot",decorate,true);
-				},
+			colourIt("wednesday_first_slot",decorate,true);
+		},
 		"w2" : function(decorate){
-					colourIt("wednesday_second_slot",decorate,false);
-				},
+			colourIt("wednesday_second_slot",decorate,false);
+		},
 		"w3" : function(decorate){
-					colourIt("wednesday_third_slot",decorate,true);
-				},
+			colourIt("wednesday_third_slot",decorate,true);
+		},
 		"w4" : function(decorate){
-					colourIt("wednesday_fourth_slot",decorate,false);
-				},
+			colourIt("wednesday_fourth_slot",decorate,false);
+		},
 		"th1" : function(decorate){
-					colourIt("thursday_first_slot",decorate,false);
-				},
+			colourIt("thursday_first_slot",decorate,false);
+		},
 		"th2" : function(decorate){
-					colourIt("thursday_second_slot",decorate,true);
-				},
-		"th3" : AELDionDHCSecoWNe){PO				MBPlouNT("thursday_thATD_slA&G",dIFLitTPEEfGTITGov
-PCIGT,
+			colourIt("thursday_second_slot",decorate,true);
+		},
+		"th3" : function(decorate){
+			colourIt("thursday_third_slot", decorate, true);
+		},
 		"th4" : function(decorate){
-					colourIt("thursday_fourth_slot",decorate,true);
-				},
+			colourIt("thursday_fourth_slot",decorate,true);
+		},
 		"f1" : function(decorate){
-					colourIt("friday_first_slot",decorate,true);
-				},
+			colourIt("friday_first_slot",decorate,true);
+		},
 		"f2" : function(decorate){
-					colourIt("friday_second_slot",decorate,false);
-				},
+			colourIt("friday_second_slot",decorate,false);
+		},
 		"f3" : function(decorate){
-					colourIt("friday_third_slot",decorate,true);
-				},
+			colourIt("friday_third_slot",decorate,true);
+		},
 		"f4" : function(decorate){
-					colourIt("friday_fourth_slot",decorate,false);
-				},
-				
-				
+			colourIt("friday_fourth_slot",decorate,false);
+		},
+		"break" : function(decorate){
+			colourIt("break",decorate, true);
+		},
+
+
 	}
 
 	$(".course").click(function(){
@@ -216,7 +228,7 @@ PCIGT,
 			slotSelected = slotSelected.concat(courseToSlot[value]);
 			// Colour the slots
 			for( var i=0;i<slotSelected.length;i++){
-			
+
 				slotToFunction[slotSelected[i]](true);
 			}
 		}
@@ -225,7 +237,7 @@ PCIGT,
 			
 			//Remove the slots from slotSelected array
 			slotSelected = slotSelected.filter( function( el ) {
-  				return courseToSlot[value].indexOf( el ) < 0;
+				return courseToSlot[value].indexOf( el ) < 0;
 			} );
 			
 			// Remove the course from courseselected.
@@ -236,10 +248,10 @@ PCIGT,
 			
 			// Colour the slot
 			for( var i=0;i<courseToSlot[value].length;i++){
-					
-					slotToFunction[courseToSlot[value][i]](false);
+
+				slotToFunction[courseToSlot[value][i]](false);
 			}
-		
+
 		}
 
 	});
